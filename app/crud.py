@@ -36,3 +36,7 @@ def create_url(url: URLCreate, session: Session, ):
         raise err
 
     return db_url
+
+def get_url_by_short_id(short_id: str, session: Session):
+    return session.query(URL).filter(URL.short_url == short_id).one_or_none()
+
