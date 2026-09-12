@@ -1,8 +1,8 @@
 from sqlalchemy import select
 from sqlalchemy.orm import Session
-from schemas import URLCreate
-from models import URL
-from utils import encode
+from app.schemas import URLCreate
+from app.models import URL
+from app.utils import encode
 
 
 def create_url(url: URLCreate, session: Session, ):

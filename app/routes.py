@@ -4,9 +4,9 @@ from fastapi import Depends, HTTPException, Request
 from fastapi.responses import RedirectResponse
 from starlette import status
 
-import crud as url_service
-from db import get_db
-from schemas import URLCreate, URLResponse
+import app.crud as url_service
+from app.db import get_db
+from app.schemas import URLCreate, URLResponse
 
 url_router = APIRouter()
 

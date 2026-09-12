@@ -1,5 +1,5 @@
 from hashids import Hashids
-from config import settings
+from app.config import settings
 
 hashids = Hashids(salt=settings.HASHID_SALT, min_length=6,)
 
