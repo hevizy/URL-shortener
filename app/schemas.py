@@ -15,5 +15,5 @@ class URLInfo(BaseModel):
 
 class URLResponse(BaseModel):
     origin_url: HttpUrl
-    short_url: HttpUrl
+    short_url: str
     clicks: int
