@@ -1,6 +1,8 @@
 # Simple URL shorter 
 
 It`s my first project on fastapi
+<img width="1451" height="605" alt="image" src="https://github.com/user-attachments/assets/53be9384-6e68-454f-962e-c0a3aeeb7e53" />
+
 
 **Backend Stack:**
 
