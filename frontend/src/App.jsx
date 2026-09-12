@@ -18,7 +18,7 @@ function App() {
       const response = await axios.post('http://localhost:8000/shortener', { url: longUrl });
       setShortUrl(response.data);
     } catch (err) {
-      setError('Ошибка при сокращении ссылки');
+      setError('Shorting error');
     }
   };
 
@@ -26,13 +26,13 @@ function App() {
     if (shortUrl?.short_url) {
       navigator.clipboard.writeText(shortUrl.short_url);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // Возвращаем текст кнопки через 2 сек
+      setTimeout(() => setCopied(false), 2000);
     }
   };
 
   return (
     <div className="app-container">
-      <h1 className="title">✂️ Сокращатель ссылок</h1>
+      <h1 className="title">✂️ URL shortener</h1>
 
       <form className="form" onSubmit={handleSubmit}>
         <input
@@ -43,26 +43,26 @@ function App() {
           onChange={(e) => setLongUrl(e.target.value)}
           required
         />
-        <button type="submit" className="btn-primary">Сократить</button>
+        <button type="submit" className="btn-primary">CUT !</button>
       </form>
 
       {error && <p className="error-text">{error}</p>}
 
       {shortUrl && (
         <div className="result-box">
-          <p className="success-text">🎉 <b>Готово!</b></p>
+          <p className="success-text">🎉 <b>Success!</b></p>
 
           <div className="link-container">
             <a href={shortUrl.short_url} target="_blank" rel="noopener noreferrer" className="short-link">
               {shortUrl.short_url}
             </a>
             <button type="button" className="btn-copy" onClick={handleCopy}>
-              {copied ? 'Скопировано!' : 'Копировать'}
+              {copied ? 'Is copied!' : 'Copy'}
             </button>
           </div>
 
           <p className="clicks-text">
-            Количество переходов: <b>{shortUrl.clicks || 0}</b>
+            Clicks count: <b>{shortUrl.clicks || 0}</b>
           </p>
         </div>
       )}
