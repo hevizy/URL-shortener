@@ -219,6 +219,7 @@ __marimo__/
 
 .idea
 
+/data/shortener.db
+*.db
 
-app/data/shortener.db
 
