@@ -1,6 +1,7 @@
-# Simple URL shorter 
+# Simple URL shortener
 
-It`s my first project on fastapi
+1st fastapi project
+
 <img width="1451" height="605" alt="image" src="https://github.com/user-attachments/assets/53be9384-6e68-454f-962e-c0a3aeeb7e53" />
 
 
@@ -14,7 +15,7 @@ _Alembic_ - DB migrations
 
 _Hashids_ - generate unique string for short url
 
-_uvicorn_
+_uvicorn_ - ASGI web server
 
 **Frontend Stack:**
 
@@ -35,7 +36,7 @@ uv run alembic upgrade head
 uv run uvicorn app.main:app
 ```
 
-_Server is going start on_ http://localhost:8000
+_API will be available at_ http://localhost:8000
 
 ---
 
@@ -48,7 +49,7 @@ cd frontend
 
 
 
-**Install dependents** 
+**Install dependencies** 
 
 ```bash
 npm install 
@@ -60,7 +61,7 @@ npm install
 npm run dev
 ```
 
-_Server is going start on_ http://localhost:5173
+_Server will start at_ http://localhost:5173
 
 ---
 
