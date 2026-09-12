@@ -1,0 +1,130 @@
+body, #root {
+  background-color: #e8f5e9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #2e7d32;
+  font-size: 24px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #c5e1a5;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: #4caf50;
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #388e3c;
+}
+
+.error-text {
+  color: #d32f2f;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.result-box {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  border-radius: 12px;
+}
+
+.success-text {
+  margin: 0 0 16px 0;
+  color: #33691e;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 12px 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  gap: 15px;
+}
+
+.short-link {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-all;
+  text-align: left;
+}
+
+.short-link:hover {
+  text-decoration: underline;
+}
+
+.btn-copy {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  color: #424242;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-copy:hover {
+  background-color: #bdbdbd;
+}
+
+.clicks-text {
+  margin: 16px 0 0 0;
+  font-size: 14px;
+  color: #555;
+}

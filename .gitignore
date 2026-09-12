@@ -220,5 +220,5 @@ __marimo__/
 .idea
 
 
-shortener.db
+app/data/shortener.db
 
